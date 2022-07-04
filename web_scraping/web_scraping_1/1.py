@@ -1,7 +1,6 @@
 import requests
 
 website_url = requests.get('https://en.wikipedia.org/wiki/List_of_nuclear_weapons_tests').text
-website_url
 
 from bs4 import BeautifulSoup
 
