@@ -50,14 +50,7 @@ for chapter_url in list_of_urls:
         ad = soup.find('span', class_='VVCatalog2020Menu__LinkCol _text')
         #print(ad.text.strip())
         categorya.append(ad.text.strip())
-        #for i in product:
-         #   if product.split()[i]=='title':
-          #      print(product.split()[i+1])
-        #titles = [div['title'] for div in chapter_url.find_all('div', title=True)]
-        #print(titles)
-        #stop
 
-#print(len(products_coast), len(products_name), len(categorya))
 values = service.spreadsheets().values().batchUpdate(
     spreadsheetId=spreadsheet_id,
     body={
